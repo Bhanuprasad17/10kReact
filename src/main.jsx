@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { Table } from './Components/Table.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  // <StrictMode>
     <App />
-  </StrictMode>,
+  // </StrictMode>,
 )
