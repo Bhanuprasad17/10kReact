@@ -1,13 +1,14 @@
-import React from 'react'
-import { loginData } from '../../data/LoginData'
+import React from 'react';
+import { loginData } from '../../data/LoginData';
+import Form1 from '../../Custom/Form1';
 
 const Login = () => {
-
-    let keys = Object.keys(loginData[0])
-
   return (
-    <div>Login</div>
-  )
-}
+    <>
+      <h2>Login</h2>
+      <Form1 sourceData={loginData} />
+    </>
+  );
+};
 
-export default Login
+export default Login;

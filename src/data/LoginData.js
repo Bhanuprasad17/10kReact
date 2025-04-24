@@ -6,5 +6,14 @@ export const loginData = [
     {
         name : 'password',
         type : 'password'
-    }
+    },
+    {
+        name : 'login',
+        type : 'text'
+    },
+    {
+        name : 'password',
+        type : 'password'
+    },
+
 ]

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { registerData } from '../../data/RegisterData';
+import Form1 from '../../Custom/Form1';
 
 const Register = () => {
   return (
-    <div>Register</div>
-  )
-}
+    <>
+      <h2>Register</h2>
+      <Form1 sourceData={registerData} />
+    </>
+  );
+};
 
-export default Register
+export default Register;

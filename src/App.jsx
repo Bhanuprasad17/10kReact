@@ -6,6 +6,8 @@ import Staff from "./Components/Staff/Staff";
 import Students from "./Components/Students/Students";
 import { Table } from "./Components/Table";
 import Subjects from './Components/Subjects/Subjects'
+import Login from "./Components/LoginAndRegister/Login";
+import Register from "./Components/LoginAndRegister/Register";
 
 function App() {
 
@@ -14,10 +16,12 @@ function App() {
 
   return <>
      
-     <Students />
-     <Staff />
-     <Subjects />
+     {/* <Students /> */}
+     {/* <Staff /> */}
+     {/* <Subjects /> */}
      
+     {/* <Login /> */}
+     {/* <Register /> */}
   </>
 
 }
