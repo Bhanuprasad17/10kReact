@@ -6,8 +6,11 @@ import Staff from "./Components/Staff/Staff";
 import Students from "./Components/Students/Students";
 import { Table } from "./Components/Table";
 import Subjects from './Components/Subjects/Subjects'
-import Login from "./Components/LoginAndRegister/Login";
+// import Login from "./Components/LoginAndRegister/Login";
 import Register from "./Components/LoginAndRegister/Register";
+// import LoginPage from "./Components/LoginPage";
+import StudentForm from "./Components/StudentForm";
+import LoginPage from "./Components/LoginPage";
 
 function App() {
 
@@ -20,8 +23,11 @@ function App() {
      {/* <Staff /> */}
      {/* <Subjects /> */}
      
-     {/* <Login /> */}
-     {/* <Register /> */}
+     {/* <Login />
+     <Register /> */}
+     {/* <LoginPage /> */}
+     {/* <StudentForm /> */}
+     <LoginPage />
   </>
 
 }
