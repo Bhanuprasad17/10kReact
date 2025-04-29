@@ -1,35 +1,18 @@
-// import "./App.css";
-import { Cards } from "./Components/Cards";
-import { GrandParent } from "./Components/GrandParent";
-import { NoDataFound } from "./Components/NoDataFound";
-import Staff from "./Components/Staff/Staff";
-import Students from "./Components/Students/Students";
-import { Table } from "./Components/Table";
-import Subjects from './Components/Subjects/Subjects'
-// import Login from "./Components/LoginAndRegister/Login";
-import Register from "./Components/LoginAndRegister/Register";
-// import LoginPage from "./Components/LoginPage";
-import StudentForm from "./Components/StudentForm";
-import LoginPage from "./Components/LoginPage";
+import React ,{Component}from "react";
+import Card from "./Components/classComponets/Card";
+import Students from "./Components/classComponets/Students";
+import Counter from "./Components/classComponets/Counter";
+import Parent from "./Components/classComponets/Parent";
 
-function App() {
-
-  const name = "Bhanuprasad"
-  const age =23
-
-  return <>
-     
-     {/* <Students /> */}
-     {/* <Staff /> */}
-     {/* <Subjects /> */}
-     
-     {/* <Login />
-     <Register /> */}
-     {/* <LoginPage /> */}
-     {/* <StudentForm /> */}
-     <LoginPage />
-  </>
-
+class App extends Component{
+  render(){
+    // return <Card />
+    // return <Students />
+    return <>
+       {/* <Counter /> */}
+       <Parent />
+    </>
+  }
 }
 
-export default App;
+export default App
