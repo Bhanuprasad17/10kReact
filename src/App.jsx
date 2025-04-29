@@ -3,6 +3,7 @@ import Card from "./Components/classComponets/Card";
 import Students from "./Components/classComponets/Students";
 import Counter from "./Components/classComponets/Counter";
 import Parent from "./Components/classComponets/Parent";
+import LoginToggle from "./Components/classComponets/LoginToggle";
 
 class App extends Component{
   render(){
@@ -10,7 +11,8 @@ class App extends Component{
     // return <Students />
     return <>
        {/* <Counter /> */}
-       <Parent />
+       {/* <Parent /> */}
+       <LoginToggle />
     </>
   }
 }

@@ -8,33 +8,33 @@ class Counter extends Component{
         }
     }
 
-    handleIncrement=() =>{
-        if(this.state.count < 10){
+    handleIncrement = () =>{
+        if(this.state.count < 20){
             this.setState({count : this.state.count + 1})
         }
     }
 
-    handleReset = () => {
-        if(this.state.count > 0){
-            this.setState({count : 0})
-        }
-    }
-
-    handleDecrement = () =>{
+    hanldeDecrement = () => {
         if(this.state.count > 0){
             this.setState({count : this.state.count - 1})
         }
     }
 
+    hanldeReset = () => {
+        if(this.state.count > 0){
+            this.setState({count : 0})
+        }
+    }
+
     render(){
+        console.log(this.state.count)
         return <>
-           <h3>{this.state.count}</h3>
+          <h3>{this.state.count}</h3>
           <button onClick={this.handleIncrement}>+</button>
-          <button onClick={this.handleReset}>Reset</button>
-          <button onClick={this.handleDecrement}>-</button>
+          <button onClick={this.hanldeReset}>🔄</button>
+          <button onClick={this.hanldeDecrement}>-</button>
         </>
     }
 }
-
 
 export default Counter
