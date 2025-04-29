@@ -5,17 +5,17 @@ class LoginToggle extends Component{
     constructor(){
         super()
         this.state = {
-            name : 'login'
+            isLoggedIn : false
         }
     }
 
     hanldeToggle = () => {
-        this.setState({name : this.state.name == 'login' ? 'logout' : 'login'})
+        this.setState({isLoggedIn : !this.state.isLoggedIn })
     }
 
     render(){
         return <>
-           <button onClick={this.hanldeToggle}>{this.state.name}</button>
+           <button onClick={this.hanldeToggle}>{this.state.isLoggedIn ? 'logout' : 'login'}</button>
         </>
     }
 }
