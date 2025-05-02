@@ -1,24 +1,18 @@
 import React ,{Component}from "react";
-import Card from "./Components/classComponets/Card";
-import Students from "./Components/classComponets/Students";
-import Counter from "./Components/classComponets/Counter";
-import Parent from "./Components/classComponets/Parent";
-import LoginToggle from "./Components/classComponets/LoginToggle";
-import TypedValue from "./Components/classComponets/TypedValue";
-import ShowTypedColor from "./Components/classComponets/ShowTypedColor";
-import NamesWithColor from "./Components/classComponets/NamesWithColor";
+import PrintData from "./Components/classComponets/PrintData";
+import PrintData2 from "./Components/classComponets/PrintData2";
+import FetchProducts from "./Components/classComponets/FetchProducts";
+import FetchProduct2 from "./Components/classComponets/FetchProducts2";
+import FetchProducts3 from "./Components/classComponets/FetchProducts3";
 
 class App extends Component{
   render(){
-    // return <Card />
-    // return <Students />
     return <>
-       {/* <Counter /> */}
-       {/* <Parent /> */}
-       {/* <LoginToggle /> */}
-       {/* <TypedValue /> */}
-       {/* <ShowTypedColor /> */}
-       <NamesWithColor />
+     {/* <PrintData /> */}
+     {/* <PrintData2 /> */}
+     {/* <FetchProducts /> */}
+     {/* <FetchProduct2 /> */}
+     <FetchProducts3 />
     </>
   }
 }
