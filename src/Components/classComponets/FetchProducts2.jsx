@@ -8,11 +8,13 @@ export default class FetchProduct2 extends Component {
             product: null //{}
         }
     }
+    
     componentDidMount() {
         fetch(`https://fakestoreapi.com/products/${this.state.count}`)
             .then(res => res.json())
             .then(data => this.setState({ product: data }))
     }
+
     componentDidUpdate(prevProps, prevState) {
         if (prevState.count !== this.state.count) {
             fetch(`https://fakestoreapi.com/products/${this.state.count}`)

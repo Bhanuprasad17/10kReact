@@ -4,6 +4,7 @@ import PrintData2 from "./Components/classComponets/PrintData2";
 import FetchProducts from "./Components/classComponets/FetchProducts";
 import FetchProduct2 from "./Components/classComponets/FetchProducts2";
 import FetchProducts3 from "./Components/classComponets/FetchProducts3";
+import CycleExample from "./Components/classComponets/CycleExample";
 
 class App extends Component{
   render(){
@@ -12,7 +13,8 @@ class App extends Component{
      {/* <PrintData2 /> */}
      {/* <FetchProducts /> */}
      {/* <FetchProduct2 /> */}
-     <FetchProducts3 />
+     {/* <FetchProducts3 /> */}
+     <CycleExample />
     </>
   }
 }

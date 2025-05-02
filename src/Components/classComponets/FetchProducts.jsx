@@ -8,19 +8,18 @@ class FetchProducts extends Component{
             count : 0,
             products : null
         }
-        // console.log('constructor')
+        console.log('constructor')
     }
-
     componentDidMount(){
-        // console.log('componentDidMount')
+        console.log('componentDidMount')
     }
 
     componentDidUpdate(prevProp, prevState){
-        if (prevState.count != this.state.count){
+        if (prevState.count !== this.state.count){
             fetch(`https://fakestoreapi.com/products/${this.state.count}`)
             .then(respone => respone.json())
             .then(data => this.setState({products : data}))
-            // console.log('componentDidUpdate')
+            console.log('componentDidUpdate')
         }
     }
 
@@ -29,14 +28,14 @@ class FetchProducts extends Component{
     }
     
     render(){
-        // console.log('render')
-        // console.log(this.state.products)
+        console.log('render')
+        console.log(this.state.products)
         return <>  
            <h1>{this.state.count}</h1>
           <button onClick={this.handleInc}>click me</button>
           {
             !this.state.products ? <>
-              <h1>Loding....</h1>
+              <h1>Loading....</h1>
             </> : <>
                <h1>{this.state.products.title}</h1>
             </>
