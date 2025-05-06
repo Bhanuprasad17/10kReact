@@ -8,6 +8,8 @@ import CycleExample from "./Components/classComponets/CycleExample";
 import RideBooking from "./Components/classComponets/RideBooking";
 import TypedValue from "./Components/functionComponents/TypedValue";
 import Counter from "./Components/functionComponents/Counter";
+import BatchUpdate from "./Components/functionComponents/BatchUpdate";
+import DarkModeToggle from "./Components/functionComponents/DarkModeToggle";
 
 class App extends Component{
   render(){
@@ -19,8 +21,10 @@ class App extends Component{
      {/* <FetchProducts3 /> */}
      {/* <CycleExample /> */}
      {/* <RideBooking /> */}
-     <TypedValue />
+     {/* <TypedValue /> */}
      {/* <Counter /> */}
+     {/* <BatchUpdate /> */}
+     <DarkModeToggle />
     </>
   }
 }
