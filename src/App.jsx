@@ -10,6 +10,7 @@ import TypedValue from "./Components/functionComponents/TypedValue";
 import Counter from "./Components/functionComponents/Counter";
 import BatchUpdate from "./Components/functionComponents/BatchUpdate";
 import DarkModeToggle from "./Components/functionComponents/DarkModeToggle";
+import TodoList from "./Components/functionComponents/TodoList";
 
 class App extends Component{
   render(){
@@ -24,7 +25,8 @@ class App extends Component{
      {/* <TypedValue /> */}
      {/* <Counter /> */}
      {/* <BatchUpdate /> */}
-     <DarkModeToggle />
+     {/* <DarkModeToggle /> */}
+     <TodoList />
     </>
   }
 }
