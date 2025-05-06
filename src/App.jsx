@@ -6,6 +6,8 @@ import FetchProduct2 from "./Components/classComponets/FetchProducts2";
 import FetchProducts3 from "./Components/classComponets/FetchProducts3";
 import CycleExample from "./Components/classComponets/CycleExample";
 import RideBooking from "./Components/classComponets/RideBooking";
+import TypedValue from "./Components/functionComponents/TypedValue";
+import Counter from "./Components/functionComponents/Counter";
 
 class App extends Component{
   render(){
@@ -17,6 +19,8 @@ class App extends Component{
      {/* <FetchProducts3 /> */}
      {/* <CycleExample /> */}
      {/* <RideBooking /> */}
+     <TypedValue />
+     {/* <Counter /> */}
     </>
   }
 }

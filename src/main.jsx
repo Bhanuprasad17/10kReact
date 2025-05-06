@@ -4,20 +4,22 @@ import './index.css'
 import App from './App.jsx'
 import { Table } from './Components/Table.jsx'
 
-let root = createRoot(document.getElementById('root'))
+createRoot(document.getElementById('root')).render(
+  <App />
+)
 
 
-let count = 0
-function Counter(){
-  function handleIncre(){
-    count = count + 1
-    root.render(<Counter />)
-    console.log(count)
-  }
-  return <>
-     <h1>Count : {count}</h1>
-     <button onClick={handleIncre}>INC</button>
-  </>
-}
+// let count = 0
+// function Counter(){
+//   function handleIncre(){
+//     count = count + 1
+//     root.render(<Counter />)
+//     console.log(count)
+//   }
+//   return <>
+//      <h1>Count : {count}</h1>
+//      <button onClick={handleIncre}>INC</button>
+//   </>
+// }
 
-root.render(<Counter />)
+// root.render(<Counter />)
