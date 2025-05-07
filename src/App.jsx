@@ -11,6 +11,10 @@ import Counter from "./Components/functionComponents/Counter";
 import BatchUpdate from "./Components/functionComponents/BatchUpdate";
 import DarkModeToggle from "./Components/functionComponents/DarkModeToggle";
 import TodoList from "./Components/functionComponents/TodoList";
+import TodoList2 from "./Components/functionComponents/TodoList2";
+import CharacterConter from "./Components/functionComponents/CharacterConter";
+import PasswordToggle from "./Components/functionComponents/PasswordToggle";
+import UseEffect from "./Components/functionComponents/UseEffect";
 
 class App extends Component{
   render(){
@@ -26,7 +30,12 @@ class App extends Component{
      {/* <Counter /> */}
      {/* <BatchUpdate /> */}
      {/* <DarkModeToggle /> */}
-     <TodoList />
+     {/* <TodoList /> */}
+     {/* <TodoList2 /> */}
+     {/* <CharacterConter /> */}
+     {/* <PasswordToggle /> */}
+     {/* <Counter /> */}
+     <UseEffect />
     </>
   }
 }
