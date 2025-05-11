@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "493e",
+      "username": "bhanu",
+      "email": "bhanuprasad@gmail.com",
+      "password": "12345",
+      "gender": "male"
+    },
+    {
+      "id": "c7e9",
+      "username": "bhanu",
+      "email": "bhanuprasad@gmail.com",
+      "password": "12345",
+      "gender": "male"
+    },
+    {
+      "id": "60ce",
+      "username": "dell",
+      "email": "dell@gmail.com",
+      "password": "1234",
+      "gender": "female"
+    },
+    {
+      "id": "5ff0",
+      "username": "kohli",
+      "password": "123456",
+      "gender": "male",
+      "email": "kohli@gmail.com"
+    },
+    {
+      "id": "8b38",
+      "username": "test",
+      "password": "123456",
+      "gender": "female",
+      "email": "test@gmail.com"
+    }
+  ]
+}

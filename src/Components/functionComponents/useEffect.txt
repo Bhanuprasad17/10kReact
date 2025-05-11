@@ -1,0 +1,214 @@
+ import React, { useEffect, useState } from 'react'
+
+const UseEffect3 = () => {
+
+    const [count, setCount] = useState(1)
+
+    let handleInc = () =>{
+        setCount(count + 1)
+    }
+
+    useEffect(()=>{
+      setInterval(()=>{
+        setCount(count + 1)
+      },1000)
+    },[count])
+
+  return (
+    <div>
+        <h1>{count}</h1>
+        <button onClick={handleInc}>Inc</button>
+    </div>
+  )
+}
+
+export default UseEffect3
+
+
+ Flow: First 5 Renders (over 5 seconds approx)
+✅ Initial Render (count = 1)
+Component mounts.
+
+useEffect runs with count = 1.
+
+Creates Interval-1 → runs every 1000ms → does setCount(1 + 1) → sets count = 2.
+
+Timer starts ticking...
+
+✅ Render 2 (count = 2)
+After 1s, Interval-1 fires, calls setCount(2).
+
+React re-renders with count = 2.
+
+useEffect runs again because count changed.
+
+Creates Interval-2, which does setCount(2 + 1) → sets count = 3.
+
+Now 2 intervals are active (Interval-1, Interval-2).
+
+✅ Render 3 (count = 3)
+1s later, both Interval-1 and Interval-2 fire:
+
+Interval-1 → setCount(2)
+
+Interval-2 → setCount(3)
+
+setCount(3) causes re-render (React skips re-render for same value like 2).
+
+count becomes 3.
+
+useEffect runs again.
+
+Creates Interval-3, which does setCount(3 + 1) → sets count = 4.
+
+Now 3 intervals are active.
+
+✅ Render 4 (count = 4)
+All three intervals run after 1s:
+
+Interval-1 → setCount(2)
+
+Interval-2 → setCount(3)
+
+Interval-3 → setCount(4)
+
+Only setCount(4) causes change → re-render.
+
+count becomes 4.
+
+useEffect runs again.
+
+Creates Interval-4 → setCount(5)
+
+Now 4 intervals are running.
+
+✅ Render 5 (count = 5)
+After another second, all 4 intervals fire:
+
+Interval-1 → setCount(2)
+
+Interval-2 → setCount(3)
+
+Interval-3 → setCount(4)
+
+Interval-4 → setCount(5)
+
+setCount(5) triggers re-render → count = 5
+
+useEffect runs again.
+
+Creates Interval-5 → setCount(6)
+
+Now 5 intervals are running in parallel.
+
+
+Problem Timeline Example
+Let’s say count = 2 currently, and you have multiple intervals running:
+
+Time	Interval	Captured count	setCount(captured + 1)	Result
+2s	    Interval-1	1	setCount(2)	❌ Skipped (already 2)
+2s     Interval-2	2	setCount(3)	✅ Re-render with 3
+3s	   Interval-1	1	setCount(2)	❌ Skipped again
+3s	 Interval-2	2	setCount(3)	❌ Skipped again
+3s	Interval-3	3	setCount(4)	✅ Count becomes 4
+
+
+
+Analogy:
+Imagine 3 workers trying to update the score on a scoreboard:
+
+Worker A sees 1, adds 1 → sets it to 2
+
+Worker B sees 2, adds 1 → sets it to 3
+
+Worker C still sees 1 → tries to set it to 2 again
+
+Even if the scoreboard ignores duplicate values, the workers are fighting — the flicker is from the conflicting attempts, not from successful renders.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Render #1 (Initial Mount):
+count = 1
+
+Component renders
+
+useEffect runs:
+
+Starts Interval A: every 1s → setCount(prev => prev + 1)
+
+Registers cleanup: clearInterval(Interval A)
+
+✅ Output on screen: 1
+
+⏱️ After 1 Second → Interval A Fires:
+setCount(prev => prev + 1) → count becomes 2
+
+Component re-renders because state changed
+
+🔁 Render #2:
+count = 2
+
+Component renders again
+
+useEffect runs again (because [count] changed)
+
+🔥 clearInterval(Interval A)
+
+Starts Interval B
+
+Registers cleanup: clearInterval(Interval B)
+
+✅ Output on screen: 2
+
+⏱️ After 1 More Second → Interval B Fires:
+setCount(prev => prev + 1) → count = 3
+
+Triggers a re-render
+
+🔁 Render #3:
+count = 3
+
+useEffect runs again:
+
+🔥 Clears Interval B
+
+Starts Interval C
+
+✅ Output: 3
+
+⏱️ After 1 More Second → Interval C Fires:
+setCount(prev => prev + 1) → count = 4
+
+🔁 Render #4:
+count = 4
+
+useEffect runs again:
+
+🔥 Clears Interval C
+
+Starts Interval D
+
+✅ Output: 4
+
+⏱️ After 1 More Second → Interval D Fires:
+setCount(prev => prev + 1) → count = 5
+
+🔁 Render #5:
+count = 5
+
+useEffect runs:
+
+🔥 Clears Interval D
+
+Starts Interval E
+
+✅ Output: 5
+
+🔁 And so on...
+Every second:
+
+The interval adds +1 using the latest value
+
+The effect tears down the old interval and starts a new one
+
+It’s working correctly but less efficient than needed
+

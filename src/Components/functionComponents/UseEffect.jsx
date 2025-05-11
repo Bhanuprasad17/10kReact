@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from 'react'
 
 const UseEffect = () => {
-    let [count, setCount] = useState(0)
+    const [count, setCount] = useState(1)
+    const [name, setName] = useState('bhanu')
 
     let handleInc = () =>{
-        // setCount(count + 1)
-        console.log('1')
+        setName('prasad')
     }
 
     useEffect(()=>{
-        setCount(count + 1)
-        // when a component calls setState inside useEffect, but useEffect 
-        // either doesn't have a dependency array, or one of the dependencies changes on every render.
-        // it will form infinity loop
+        setInterval(()=>{
+            console.log(count)
+            setCount(count + 1)
+        },1000)
+        
     })
 
   return (
     <>
+      <h1>useEffect</h1>
       <h1>{count}</h1>
       <button onClick={handleInc}>Inc</button>
     </>
