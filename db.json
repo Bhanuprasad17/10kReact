@@ -34,6 +34,146 @@
       "password": "123456",
       "gender": "female",
       "email": "test@gmail.com"
+    },
+    {
+      "id": "a1f2",
+      "username": "alice",
+      "email": "alice@example.com",
+      "password": "alice123",
+      "gender": "female"
+    },
+    {
+      "id": "b2e4",
+      "username": "bob",
+      "email": "bob@example.com",
+      "password": "bobpass",
+      "gender": "male"
+    },
+    {
+      "id": "c3d6",
+      "username": "charlie",
+      "email": "charlie@domain.com",
+      "password": "charliepwd",
+      "gender": "male"
+    },
+    {
+      "id": "d4f7",
+      "username": "diana",
+      "email": "diana@webmail.com",
+      "password": "diana456",
+      "gender": "female"
+    },
+    {
+      "id": "e5a9",
+      "username": "emma",
+      "email": "emma@hello.com",
+      "password": "emma789",
+      "gender": "female"
+    },
+    {
+      "id": "f6b0",
+      "username": "frank",
+      "email": "frank@protonmail.com",
+      "password": "frankpass",
+      "gender": "male"
+    },
+    {
+      "id": "g7c3",
+      "username": "grace",
+      "email": "grace@example.net",
+      "password": "grace123",
+      "gender": "female"
+    },
+    {
+      "id": "h8d4",
+      "username": "henry",
+      "email": "henry@mail.com",
+      "password": "henry2021",
+      "gender": "male"
+    },
+    {
+      "id": "i9e5",
+      "username": "ivy",
+      "email": "ivy@ivyworld.com",
+      "password": "ivyivy",
+      "gender": "female"
+    },
+    {
+      "id": "j0f6",
+      "username": "jack",
+      "email": "jack@user.com",
+      "password": "jackrules",
+      "gender": "male"
+    },
+    {
+      "id": "k1g7",
+      "username": "kate",
+      "email": "kate@domain.net",
+      "password": "kate007",
+      "gender": "female"
+    },
+    {
+      "id": "l2h8",
+      "username": "leo",
+      "email": "leo@leo.net",
+      "password": "leopass",
+      "gender": "male"
+    },
+    {
+      "id": "m3i9",
+      "username": "mia",
+      "email": "mia@example.org",
+      "password": "miamia",
+      "gender": "female"
+    },
+    {
+      "id": "n4j0",
+      "username": "nathan",
+      "email": "nathan@workmail.com",
+      "password": "nathan123",
+      "gender": "male"
+    },
+    {
+      "id": "o5k1",
+      "username": "olivia",
+      "email": "olivia@web.com",
+      "password": "olivia456",
+      "gender": "female"
+    },
+    {
+      "id": "p6l2",
+      "username": "peter",
+      "email": "peter@domain.io",
+      "password": "peterpan",
+      "gender": "male"
+    },
+    {
+      "id": "q7m3",
+      "username": "quinn",
+      "email": "quinn@tech.com",
+      "password": "quinnpass",
+      "gender": "female"
+    },
+    {
+      "id": "r8n4",
+      "username": "ryan",
+      "email": "ryan@space.com",
+      "password": "ryanrulez",
+      "gender": "male"
+    },
+    {
+      "id": "s9o5",
+      "username": "sara",
+      "email": "sara@nice.com",
+      "password": "sara321",
+      "gender": "female"
+    },
+    {
+      "id": "t0p6",
+      "username": "tom",
+      "email": "tom@funny.com",
+      "password": "tommyboy",
+      "gender": "male"
     }
   ]
 }

@@ -39,7 +39,9 @@ export const getLoginData = async (payload) =>{
             }
         })
 
-        console.log(response.data)
+        // console.log(response.data[0])
+
+        return response.data[0]
         
     } catch (error) {
         console.log('failed to login', error.message)
