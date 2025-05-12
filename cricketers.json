@@ -1,0 +1,99 @@
+{
+  "crickers": [
+    { "id": 1, "name": "Virat Kohli", "role": "Batsman", "country": "India" },
+    { "id": 2, "name": "Joe Root", "role": "Batsman", "country": "England" },
+    {
+      "id": 3,
+      "name": "Steve Smith",
+      "role": "Batsman",
+      "country": "Australia"
+    },
+    {
+      "id": 4,
+      "name": "Kane Williamson",
+      "role": "Batsman",
+      "country": "New Zealand"
+    },
+    { "id": 5, "name": "Babar Azam", "role": "Batsman", "country": "Pakistan" },
+    { "id": 6, "name": "Jasprit Bumrah", "role": "Bowler", "country": "India" },
+    {
+      "id": 7,
+      "name": "Pat Cummins",
+      "role": "Bowler",
+      "country": "Australia"
+    },
+    {
+      "id": 8,
+      "name": "Trent Boult",
+      "role": "Bowler",
+      "country": "New Zealand"
+    },
+    {
+      "id": 9,
+      "name": "Shaheen Afridi",
+      "role": "Bowler",
+      "country": "Pakistan"
+    },
+    {
+      "id": 10,
+      "name": "Ben Stokes",
+      "role": "All-Rounder",
+      "country": "England"
+    },
+    {
+      "id": 11,
+      "name": "Hardik Pandya",
+      "role": "All-Rounder",
+      "country": "India"
+    },
+    {
+      "id": 12,
+      "name": "Shakib Al Hasan",
+      "role": "All-Rounder",
+      "country": "Bangladesh"
+    },
+    {
+      "id": 13,
+      "name": "David Warner",
+      "role": "Batsman",
+      "country": "Australia"
+    },
+    {
+      "id": 14,
+      "name": "Rashid Khan",
+      "role": "Bowler",
+      "country": "Afghanistan"
+    },
+    {
+      "id": 15,
+      "name": "Quinton de Kock",
+      "role": "Wicket-Keeper",
+      "country": "South Africa"
+    },
+    {
+      "id": 16,
+      "name": "Jos Buttler",
+      "role": "Wicket-Keeper",
+      "country": "England"
+    },
+    {
+      "id": 17,
+      "name": "Mohammad Rizwan",
+      "role": "Wicket-Keeper",
+      "country": "Pakistan"
+    },
+    { "id": 18, "name": "Rohit Sharma", "role": "Batsman", "country": "India" },
+    {
+      "id": 19,
+      "name": "Marnus Labuschagne",
+      "role": "Batsman",
+      "country": "Australia"
+    },
+    {
+      "id": 20,
+      "name": "Mehidy Hasan",
+      "role": "All-Rounder",
+      "country": "Bangladesh"
+    }
+  ]
+}
