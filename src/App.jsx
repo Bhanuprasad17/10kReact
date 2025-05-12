@@ -8,6 +8,8 @@ import Home from "./Components/functionComponents/Home";
 import SearchTheUser from "./Components/functionComponents/SearchTheUser";
 import SearchTheUser2 from "./Components/functionComponents/SearchTheUser2";
 import SearchTheUser3 from "./Components/functionComponents/SearchTheUser3";
+import CricketersData from "./Components/functionComponents/CricketersData";
+import ViewMore from "./Components/functionComponents/ViewMore";
 
 class App extends Component {
   render() {
@@ -25,7 +27,15 @@ class App extends Component {
         {/* <NewRegister /> */}
         {/* <SearchTheUser /> */}
         {/* <SearchTheUser2 /> */}
-        <SearchTheUser3 />
+        {/* <SearchTheUser3 /> */}
+        {/* <CricketersData /> */}
+
+        <BrowserRouter>
+           <Routes>
+            <Route path="/" element={<CricketersData />}/>
+            <Route path="/view/:id" element={<ViewMore />}/>
+           </Routes>
+        </BrowserRouter>
       </>
     );
   }

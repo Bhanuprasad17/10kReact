@@ -1,99 +1,24 @@
 {
   "crickers": [
-    { "id": 1, "name": "Virat Kohli", "role": "Batsman", "country": "India" },
-    { "id": 2, "name": "Joe Root", "role": "Batsman", "country": "England" },
-    {
-      "id": 3,
-      "name": "Steve Smith",
-      "role": "Batsman",
-      "country": "Australia"
-    },
-    {
-      "id": 4,
-      "name": "Kane Williamson",
-      "role": "Batsman",
-      "country": "New Zealand"
-    },
-    { "id": 5, "name": "Babar Azam", "role": "Batsman", "country": "Pakistan" },
-    { "id": 6, "name": "Jasprit Bumrah", "role": "Bowler", "country": "India" },
-    {
-      "id": 7,
-      "name": "Pat Cummins",
-      "role": "Bowler",
-      "country": "Australia"
-    },
-    {
-      "id": 8,
-      "name": "Trent Boult",
-      "role": "Bowler",
-      "country": "New Zealand"
-    },
-    {
-      "id": 9,
-      "name": "Shaheen Afridi",
-      "role": "Bowler",
-      "country": "Pakistan"
-    },
-    {
-      "id": 10,
-      "name": "Ben Stokes",
-      "role": "All-Rounder",
-      "country": "England"
-    },
-    {
-      "id": 11,
-      "name": "Hardik Pandya",
-      "role": "All-Rounder",
-      "country": "India"
-    },
-    {
-      "id": 12,
-      "name": "Shakib Al Hasan",
-      "role": "All-Rounder",
-      "country": "Bangladesh"
-    },
-    {
-      "id": 13,
-      "name": "David Warner",
-      "role": "Batsman",
-      "country": "Australia"
-    },
-    {
-      "id": 14,
-      "name": "Rashid Khan",
-      "role": "Bowler",
-      "country": "Afghanistan"
-    },
-    {
-      "id": 15,
-      "name": "Quinton de Kock",
-      "role": "Wicket-Keeper",
-      "country": "South Africa"
-    },
-    {
-      "id": 16,
-      "name": "Jos Buttler",
-      "role": "Wicket-Keeper",
-      "country": "England"
-    },
-    {
-      "id": 17,
-      "name": "Mohammad Rizwan",
-      "role": "Wicket-Keeper",
-      "country": "Pakistan"
-    },
-    { "id": 18, "name": "Rohit Sharma", "role": "Batsman", "country": "India" },
-    {
-      "id": 19,
-      "name": "Marnus Labuschagne",
-      "role": "Batsman",
-      "country": "Australia"
-    },
-    {
-      "id": 20,
-      "name": "Mehidy Hasan",
-      "role": "All-Rounder",
-      "country": "Bangladesh"
-    }
+    { "id": 1, "name": "Virat Kohli", "role": "Batsman", "country": "India", "age": 35, "matches": 275, "runs": 13000 },
+    { "id": 2, "name": "Joe Root", "role": "Batsman", "country": "England", "age": 33, "matches": 180, "runs": 11000 },
+    { "id": 3, "name": "Steve Smith", "role": "Batsman", "country": "Australia", "age": 34, "matches": 150, "runs": 9500 },
+    { "id": 4, "name": "Kane Williamson", "role": "Batsman", "country": "New Zealand", "age": 34, "matches": 145, "runs": 8900 },
+    { "id": 5, "name": "Babar Azam", "role": "Batsman", "country": "Pakistan", "age": 30, "matches": 125, "runs": 7500 },
+    { "id": 6, "name": "Jasprit Bumrah", "role": "Bowler", "country": "India", "age": 31, "matches": 100, "runs": 250, "wickets": 250 },
+    { "id": 7, "name": "Pat Cummins", "role": "Bowler", "country": "Australia", "age": 32, "matches": 105, "runs": 600, "wickets": 280 },
+    { "id": 8, "name": "Trent Boult", "role": "Bowler", "country": "New Zealand", "age": 35, "matches": 110, "runs": 450, "wickets": 270 },
+    { "id": 9, "name": "Shaheen Afridi", "role": "Bowler", "country": "Pakistan", "age": 25, "matches": 65, "runs": 300, "wickets": 150 },
+    { "id": 10, "name": "Ben Stokes", "role": "All-Rounder", "country": "England", "age": 33, "matches": 140, "runs": 7500 },
+    { "id": 11, "name": "Hardik Pandya", "role": "All-Rounder", "country": "India", "age": 31, "matches": 110, "runs": 4000 },
+    { "id": 12, "name": "Shakib Al Hasan", "role": "All-Rounder", "country": "Bangladesh", "age": 36, "matches": 220, "runs": 6500 },
+    { "id": 13, "name": "David Warner", "role": "Batsman", "country": "Australia", "age": 37, "matches": 170, "runs": 10500 },
+    { "id": 14, "name": "Rashid Khan", "role": "Bowler", "country": "Afghanistan", "age": 26, "matches": 95, "runs": 400, "wickets": 180 },
+    { "id": 15, "name": "Quinton de Kock", "role": "Wicket-Keeper", "country": "South Africa", "age": 32, "matches": 130, "runs": 6800 },
+    { "id": 16, "name": "Jos Buttler", "role": "Wicket-Keeper", "country": "England", "age": 34, "matches": 145, "runs": 7000 },
+    { "id": 17, "name": "Mohammad Rizwan", "role": "Wicket-Keeper", "country": "Pakistan", "age": 31, "matches": 90, "runs": 5000 },
+    { "id": 18, "name": "Rohit Sharma", "role": "Batsman", "country": "India", "age": 37, "matches": 250, "runs": 12000 },
+    { "id": 19, "name": "Marnus Labuschagne", "role": "Batsman", "country": "Australia", "age": 30, "matches": 75, "runs": 4200 },
+    { "id": 20, "name": "Mehidy Hasan", "role": "All-Rounder", "country": "Bangladesh", "age": 28, "matches": 100, "runs": 3200 }
   ]
 }
