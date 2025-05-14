@@ -1,0 +1,36 @@
+/* Cricketers.css */
+
+.cricketers-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.cricketers-table th,
+.cricketers-table td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.cricketers-table th {
+  background-color: #343a40;
+  color: white;
+}
+
+.cricketers-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cricketers-table tr:hover {
+  background-color: #ddd;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #555;
+}

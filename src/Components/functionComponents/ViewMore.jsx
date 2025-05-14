@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const ViewMore = () => {
-  const { id } = useParams(); // Fetch the 'id' from the URL params
+  const { id } = useParams();
   const [cricketer, setCricketer] = useState(null);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const ViewMore = () => {
   try {
     const response = await fetch('http://localhost:3000/crickers');
     const data = await response.json();
-    console.log("Fetched data:", data);  // Log the fetched data
+    console.log("Fetched data:", data); 
     const selectedCricketer = data.find(item => item.id == parseInt(id));
     console.log("Selected Cricketer:", selectedCricketer);
     if (selectedCricketer) {
@@ -25,7 +25,7 @@ const ViewMore = () => {
 
 
     fetchData();
-  }, [id]); // Re-fetch if the ID changes
+  }, [id]);
 
   if (!cricketer) {
     return <p>Loading...</p>;

@@ -1,0 +1,40 @@
+/* ViewMore.css */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 40px 60px; /* Increased padding */
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 500px; /* Increased width */
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-size: 28px; /* Larger font */
+  color: #333;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 18px; /* Larger font */
+  color: #555;
+}
+
+.card p strong {
+  color: #000;
+}

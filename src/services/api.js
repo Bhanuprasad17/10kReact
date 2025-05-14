@@ -1,7 +1,7 @@
 // import { registerPostApi } from "./constants"
 
 import axios from "axios";
-import { registerPostApi } from "./constants";
+import { getCricketersApi, registerPostApi } from "./constants";
 
 // export const postRegisterData = async(payload) =>{
 //     const response = await fetch(registerPostApi, payload)
@@ -20,30 +20,38 @@ import { registerPostApi } from "./constants";
 //     return data
 // }
 
-export const postRegisterData = async (payload) => {
-  try {
-    const response = await axios.post(registerPostApi, payload);
-    console.log("data", response.data);
-  } catch (error) {
-    console.log("Failed to post the data:", error.message);
-  }
-};
+// export const postRegisterData = async (payload) => {
+//   try {
+//     const response = await axios.post(registerPostApi, payload);
+//     console.log("data", response.data);
+//   } catch (error) {
+//     console.log("Failed to post the data:", error.message);
+//   }
+// };
 
 
-export const getLoginData = async (payload) =>{
-    try {
-        const response = await axios.get(registerPostApi, {
-            params : {
-                email : payload.email,
-                password : payload.password
-            }
-        })
+// export const getLoginData = async (payload) =>{
+//     try {
+//         const response = await axios.get(registerPostApi, {
+//             params : {
+//                 email : payload.email,
+//                 password : payload.password
+//             }
+//         })
 
-        // console.log(response.data[0])
+//         // console.log(response.data[0])
 
-        return response.data[0]
+//         return response.data[0]
         
-    } catch (error) {
-        console.log('failed to login', error.message)
-    }
+//     } catch (error) {
+//         console.log('failed to login', error.message)
+//     }
+// }
+
+export const getCricketersData = async() =>{
+  const response = await fetch(getCricketersApi)
+  // console.log(response.json())
+  const data = await response.json()
+  return data
 }
+
