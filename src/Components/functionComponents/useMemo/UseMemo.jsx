@@ -34,3 +34,8 @@ const UseMemo = () => {
 };
 
 export default UseMemo;
+
+
+
+// We use the useMemo hook to avoid calling a function like sumOfN again if its input (parameter) hasn't changed. 
+// If the result would stay the same, there's no need to recompute it — useMemo helps us “remember” the last result and reuse it.
