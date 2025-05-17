@@ -5,12 +5,13 @@ import Home from "./Components/functionComponents/routerDom/Home";
 import Cricketers from "./Components/functionComponents/routerDom/Cricketers";
 import View_More from "./Components/functionComponents/routerDom/View_More";
 import Login from "./Components/functionComponents/routerDom/Login";
+import UseMemo from "./Components/functionComponents/useMemo/useMemo";
 
 class App extends Component {
   render() {
     return (
       <>
-        <BrowserRouter>
+        {/* <BrowserRouter>
           <Routes>
             <Route path="/" element={<NavBar />}/>
             <Route path="/home" element={<Home/>}/>
@@ -18,8 +19,10 @@ class App extends Component {
             <Route path="/viewMore/:id" element={<View_More />}/>
             <Route path="/login" element = {<Login />}/>
           </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
         {/* <NavBar /> */}
+
+        <UseMemo />
       </>
     );
   }
