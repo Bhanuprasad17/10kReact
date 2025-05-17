@@ -6,6 +6,8 @@ import Cricketers from "./Components/functionComponents/routerDom/Cricketers";
 import View_More from "./Components/functionComponents/routerDom/View_More";
 import Login from "./Components/functionComponents/routerDom/Login";
 import UseMemo from "./Components/functionComponents/useMemo/useMemo";
+import UseCallback from "./Components/functionComponents/useCallback/UseCallback";
+import UseCallback2 from "./Components/functionComponents/useCallback/UseCallback2";
 
 class App extends Component {
   render() {
@@ -22,7 +24,9 @@ class App extends Component {
         </BrowserRouter> */}
         {/* <NavBar /> */}
 
-        <UseMemo />
+        {/* <UseMemo /> */}
+        {/* <UseCallback /> */}
+        <UseCallback2 />
       </>
     );
   }
