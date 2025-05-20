@@ -14,8 +14,9 @@ const UseMemo = () => {
     return sum;
   };
 
-//   const memoizedSum = useMemo(() => sumOfN(a), [a]); 
-  const memoizedSum = useMemo(() => sumOfN(a), []); 
+  const memoizedSum = useMemo(() => sumOfN(a), [a]); 
+  // const memoizedSum = useMemo(() => sumOfN(a), []); 
+  // console.log(sumOfN(10))
   
 
   const handleClick = () => {
@@ -27,8 +28,9 @@ const UseMemo = () => {
     <div>
       <h1>{count}</h1>
       <p>Sum of {a}: {memoizedSum}</p>
+      {/* <p>Sum of {a}</p> */}
       <button onClick={handleClick}>Click</button>
-      <Child count = {count}/>
+      {/* <Child count = {count}/> */}
     </div>
   );
 };

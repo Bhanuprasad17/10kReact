@@ -25,7 +25,7 @@ const UseCallback2 = () => {
     <div>
       <h1>{count}</h1>
       <button onClick={handleInc}>click</button>
-      <Child handleInc={handleInc}/>
+      {/* <Child handleInc={handleInc}/> */}
     </div>
   )
 }

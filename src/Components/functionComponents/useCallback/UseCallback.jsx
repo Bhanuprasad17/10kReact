@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-let arr = []
+// let arr = []
 const UseCallback = () => {
   const [count, setCount] = useState(0)
 
@@ -10,11 +10,11 @@ const UseCallback = () => {
   }
 
   funHandle()
-  arr.push(funHandle)
+  // arr.push(funHandle)
 
-  if(arr.length >2){
-    console.log(arr[0] == arr[1])
-  }
+  // if(arr.length >2){
+  //   console.log(arr[0] == arr[1])
+  // }
 
   let handleInc = () =>{
     setCount(count => count + 1)

@@ -13,7 +13,6 @@ const UseEffect = () => {
             console.log(count)
             setCount(count + 1)
         },1000)
-        
     })
 
   return (

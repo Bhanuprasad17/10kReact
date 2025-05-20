@@ -13,12 +13,12 @@ import { getCricketersApi, registerPostApi } from "./constants";
 //     }
 // }
 
-// export const loginApiData = async(payload) => {
-//     const response = await fetch(`${registerPostApi}?email=${payload.email}&password=${payload.password}`)
-//     const data = await response.json()
-//     // console.log('data',data)
-//     return data
-// }
+export const loginApiData = async(payload) => {
+    const response = await fetch(`${registerPostApi}?email=${payload.email}&password=${payload.password}`)
+    const data = await response.json()
+    // console.log('data',data)
+    return data
+}
 
 // export const postRegisterData = async (payload) => {
 //   try {
@@ -30,23 +30,23 @@ import { getCricketersApi, registerPostApi } from "./constants";
 // };
 
 
-// export const getLoginData = async (payload) =>{
-//     try {
-//         const response = await axios.get(registerPostApi, {
-//             params : {
-//                 email : payload.email,
-//                 password : payload.password
-//             }
-//         })
+export const getLoginData = async (payload) =>{
+    try {
+        const response = await axios.get(registerPostApi, {
+            params : {
+                email : payload.email,
+                password : payload.password
+            }
+        })
 
-//         // console.log(response.data[0])
+        // console.log(response.data[0])
 
-//         return response.data[0]
+        return response.data[0]
         
-//     } catch (error) {
-//         console.log('failed to login', error.message)
-//     }
-// }
+    } catch (error) {
+        console.log('failed to login', error.message)
+    }
+}
 
 export const getCricketersData = async() =>{
   const response = await fetch(getCricketersApi)
